@@ -116,13 +116,17 @@ p {
   border-radius: 10px;
 }
 .post {
-  width: 400px;
+  width: 350px;
   padding: 15px;
 }
 .post:hover {
-  background-color: beige;
-  width: 400px;
-  padding: 15px;
+  background-image: linear-gradient(
+    to right,
+    rgba(222, 35, 191, 0),
+    rgb(59, 163, 211)
+  );
+  border-radius: 10px;
+
   cursor: pointer;
 }
 .postDate {
@@ -137,5 +141,39 @@ p {
   justify-content: space-around;
 }
 .singlePost {
-  flex: 9;
+  height: 444px;
+}
+.singlePostimg {
+  width: 100%;
+}
+/* .singlePostFesc {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} */
+.singlepostdiv {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.spd {
+  justify-content: space-between;
+  flex: 7;
+}
+.singlePostFesc {
+  flex: 5;
+}
+.singlepostimageitem {
+  display: flex;
+  justify-content: space-between;
+}
+.singlepostTitle {
+}
+.singlepostCat {
+}
+.singlepostdate {
+}
+.singlepostpage {
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid black;
 }
