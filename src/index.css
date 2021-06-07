@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.top {
+  position: sticky;
+  height: 40px;
+
+  width: 100%;
+  top: 0%;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+}
+.topleft,
+.topright {
+  background-color: aliceblue;
+
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topIcon {
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.topmidle {
+  flex: 6;
+  background-color: aliceblue;
+  align-content: center;
+}
+.item-ul {
+  display: flex;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header {
+  margin-top: 20px;
+}
+.headerTitles {
+  background-color: aliceblue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.headertitleSm {
+  text-align: center;
+  font-family: cursive;
+}
+.headertitlezLg {
+  position: absolute;
+  top: 20%;
+  font-size: 50px;
+  font-family: "cursive";
+}
+.headerImage {
+  margin-top: 70px;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.home {
+  display: flex;
+}
+.posts {
+  flex: 9;
+}
+.sidebar {
+  flex: 3;
+  margin: 20px;
+  padding-bottom: 30px;
+
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+}
+.sidebarImg {
+  height: 200px;
+  width: 240px;
+  text-align: center;
+}
+.sidebarTitle {
+  text-align: center;
+  border-top: 1px solid brown;
+  border-bottom: 1px solid brown;
+}
+.sidebarList {
+}
+.sidebarListitem {
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
