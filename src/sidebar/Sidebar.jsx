@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">About Me</span>
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/800px-User_icon_2.svg.png"
+          src="https://ahrefs.com/blog/wp-content/uploads/2019/03/blog-how-to-write-a-blog-post-400x200.png"
           className="sidebarImg"
         />
         <p>
@@ -29,9 +29,9 @@ export default function Sidebar() {
         {" "}
         <span className="sidebarTitle">Follow us</span>
         <div className="topleft">
-          <i class=" sideicon  fab fa-facebook-f"></i>
-          <i class=" sideicon fab fa-instagram"></i>
-          <i class=" sideicon fab fa-twitter"></i>
+          <i class=" topIcon  fab fa-facebook-f"></i>
+          <i class=" topIcon fab fa-instagram"></i>
+          <i class=" topIcon     fab fa-twitter"></i>
         </div>
       </div>
     </div>

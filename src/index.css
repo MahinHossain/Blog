@@ -6,6 +6,7 @@
   top: 0%;
   font-family: "Josefin Sans", sans-serif;
   display: flex;
+  z-index: 999;
 }
 .topleft,
 .topright {
@@ -67,6 +68,10 @@ li {
 }
 .posts {
   flex: 9;
+  background-color: aliceblue;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 .sidebar {
   flex: 3;
@@ -89,13 +94,48 @@ li {
   text-align: center;
   border-top: 1px solid brown;
   border-bottom: 1px solid brown;
+  font-size: 23px;
 }
 .sidebarList {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .sidebarListitem {
   font-size: 15px;
   font-family: "Playfair Display", serif;
+
+  display: inline;
+  background-color: aliceblue;
 }
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.postimage {
+  width: 100%;
+  border-radius: 10px;
+}
+.post {
+  width: 400px;
+  padding: 15px;
+}
+.post:hover {
+  background-color: beige;
+  width: 400px;
+  padding: 15px;
+  cursor: pointer;
+}
+.postDate {
+  float: right;
+  color: red;
+}
+.postItem {
+  display: flex;
+  justify-content: space-between;
+}
+.postDescription {
+  justify-content: space-around;
+}
+.singlePost {
+  flex: 9;
 }
