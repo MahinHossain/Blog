@@ -186,9 +186,58 @@ p {
 .writepost {
   display: flex;
   flex-direction: row;
-  background-color: aqua;
   padding: 30px;
 }
 .writepostimage {
-  width: 80%;
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+}
+.writepostItem {
+  display: flex;
+  flex-direction: column;
+}
+.fa-plus-circle {
+  font-size: 40px;
+}
+.sharestory {
+  width: 40%;
+  border: none;
+  height: 50%;
+  margin-left: 140px;
+}
+.sharestory:hover {
+  text-align: start;
+
+  width: 40%;
+  height: 50%;
+  background-color: rgb(239, 243, 247);
+}
+.sharestoryTitle {
+  margin-left: 50px;
+  font-size: 30px;
+  border: none;
+}
+.sharestoryTitle:hover {
+  margin-left: 50px;
+  font-size: 30px;
+  font-size: 30px;
+
+  background-color: aliceblue;
+}
+.mybtn {
+  margin-right: 30%;
+  top: 20%;
+}
+.writeItem {
+}
+.loging {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.registration {
+  position: absolute;
+  top: 5%;
+  left: 30%;
 }
