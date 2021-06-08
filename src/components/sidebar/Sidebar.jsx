@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">About Me</span>
         <img
-          src="https://ahrefs.com/blog/wp-content/uploads/2019/03/blog-how-to-write-a-blog-post-400x200.png"
+          src="http://cdn30.us1.fansshare.com/image/horsewallpapers/wild-horses-wide-full-hd-wallpaper-download-wild-horses-images-free-wallpaper-1318523997.jpg"
           className="sidebarImg"
         />
         <p>
@@ -17,7 +17,7 @@ export default function Sidebar() {
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">Ctegory</span>
-        <ul className="sidebarList  ">
+        <ul className="sidebarList">
           <li className="sidebarListitem">Music</li>
           <li className="sidebarListitem">Tour</li>
           <li className="sidebarListitem">Sing</li>

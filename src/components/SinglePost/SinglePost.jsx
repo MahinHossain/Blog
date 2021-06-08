@@ -1,12 +1,13 @@
 import React from "react";
 
-export default function single() {
+export default function Single() {
   return (
     <div className=" mt-4  m-5">
       <div className="spd">
         <img
+          alt="not load"
           className="singlePostimg"
-          src="https://images.unsplash.com/photo-1547039996-61c1135690c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1797&q=80"
+          src="http://cdn30.us1.fansshare.com/image/horsewallpapers/wild-horses-wide-full-hd-wallpaper-download-wild-horses-images-free-wallpaper-1318523997.jpg"
         />{" "}
         <div className="singlepostimageitem">
           <h4 className="singlepostTitle">Actus nonumy et duo dolor</h4>

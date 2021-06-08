@@ -6,7 +6,7 @@ export default function WritePost() {
       <div className="writepostItem">
         <img
           className="writepostimage"
-          src="https://images.unsplash.com/photo-1547039996-61c1135690c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1797&q=80"
+          src="http://cdn30.us1.fansshare.com/image/horsewallpapers/wild-horses-wide-full-hd-wallpaper-download-wild-horses-images-free-wallpaper-1318523997.jpg"
         />
         <button className="btn btn-outline-warning ml-auto mybtn mt-4">
           Publish

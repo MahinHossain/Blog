@@ -77,7 +77,7 @@ li {
   flex: 3;
   margin: 20px;
   padding-bottom: 30px;
-
+  background-color: aliceblue;
   align-items: center;
 }
 
@@ -145,6 +145,7 @@ p {
 .singlePostimg {
   width: 100%;
   border-radius: 7px;
+  height: 400px;
 }
 /* .singlePostFesc {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -236,8 +237,20 @@ p {
   top: 30%;
   left: 30%;
 }
-.registration {
-  position: absolute;
-  top: 5%;
-  left: 30%;
+
+.card1 {
+  left: 100px;
+
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.registrationdiv {
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.registrationuserIcon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
