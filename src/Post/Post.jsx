@@ -10,15 +10,15 @@ export default function Post() {
 
       <div className="postItem">
         {" "}
-        <h4 className="postTitle">Title</h4>
+        <h4 className="postTitle">Sanctus nonumy et duo</h4>
         <span className="sidebarListitem">music</span>
         <h6 className="postDate">1 hour ago</h6>
       </div>
+      <p className="text-danger">Author:Mahin Hossain </p>
       <p className="postDescription">
         Sanctus nonumy et duo dolor stet dolor invidunt. Erat kasd stet dolor
         eirmod diam stet. Est gubergren sadipscing gubergren at. Sanctus nonumy
         et duo dolor stet dolor invidunt. Erat kasd stet dolor eirmod diam stet.
-        Est gubergren sadipscing gubergren at.
       </p>
     </div>
   );

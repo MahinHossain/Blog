@@ -105,7 +105,6 @@ li {
   font-family: "Playfair Display", serif;
 
   display: inline;
-  background-color: aliceblue;
 }
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -116,14 +115,14 @@ p {
   border-radius: 10px;
 }
 .post {
-  width: 350px;
+  width: 450px;
   padding: 15px;
 }
 .post:hover {
   background-image: linear-gradient(
     to right,
     rgba(222, 35, 191, 0),
-    rgb(59, 163, 211)
+    rgb(212, 220, 221)
   );
   border-radius: 10px;
 
@@ -138,13 +137,14 @@ p {
   justify-content: space-between;
 }
 .postDescription {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .singlePost {
-  height: 444px;
+  height: 400px;
 }
 .singlePostimg {
   width: 100%;
+  border-radius: 7px;
 }
 /* .singlePostFesc {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -175,5 +175,20 @@ p {
 .singlepostpage {
   display: flex;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
+}
+
+.fa-trash {
+  color: red;
+}
+.postTitle {
+}
+.writepost {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  padding: 30px;
+}
+.writepostimage {
+  width: 80%;
 }
