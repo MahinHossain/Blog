@@ -3,39 +3,39 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function Topbar() {
   return (
-    <div className="top">
-      <div className="topleft">
-        <i class=" topIcon  fab fa-facebook-f"></i>
-        <i class=" topIcon fab fa-instagram"></i>
-        <i class=" topIcon fab fa-twitter"></i>
+    <div className=" row mx-3 p-3 ">
+      <div className=" col-md-2 d-flex justify-content-around ">
+        <i class="   fab fa-facebook-f "></i>
+        <i class="  fab fa-instagram"></i>
+        <i class="  fab fa-twitter"></i>
       </div>
-      <div className="topmidle">
-        <ul className="item-ul">
-          <li className="itemList">
+     
+        <ul className="d-flex col-md-8 justify-content-around ">
+          <li className="">
             {" "}
             <Link to="/"> Home </Link>
           </li>
-          <li className="itemList">About</li>
-          <li className="itemList">
+          <li className="">About</li>
+          <li className="">
             {" "}
             <Link to="/singlepost"> Single post </Link>
           </li>
-          <li className="itemList">
+          <li className="">
             {" "}
             <Link to="/writepost"> Write </Link>
           </li>
-          <li className="itemList">
+          <li className="">
             {" "}
-            <Link to="login"> Login </Link>
+            <Link to="login">Login </Link>
           </li>
-          <li className="itemList">
+          <li className="">
             {" "}
             <Link to="/registration"> Registration </Link>
           </li>
         </ul>
-      </div>
-      <div className="topright">
-        <i class="fas fa-user"></i>
+   
+      <div className="col-md-2 d-flex justify-content-center  ">
+        <i class="fas fa-user "></i>
         <i class="fas fa-search"></i>
       </div>
     </div>

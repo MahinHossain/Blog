@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <div className="sidebar p-4">
       <div className="sidebarItem">
         <span className="sidebarTitle">About Me</span>
         <img
