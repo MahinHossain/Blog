@@ -1,6 +1,33 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
+
+  const [categories, setcategories] = useState([]);
+  const { search } = useLocation();
+  // const postId = location.pathname.split("/")[2];
+  console.log("search :>> ", search);
+  const baseUrl = "http://localhost:5000/api/categories";
+
+  useEffect(() => {
+    axios
+      .get(baseUrl + search)
+      .then((res) => setcategories(res.data))
+      .catch((err) => console.log(`err`, err));
+  }, []);
+  console.log("categories :>> ", categories);
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="sidebar p-4">
       <div className="sidebarItem">
@@ -18,11 +45,22 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">Ctegory</span>
         <ul className="sidebarList">
-          <li className="sidebarListitem">Music</li>
-          <li className="sidebarListitem">Tour</li>
-          <li className="sidebarListitem">Sing</li>
-          <li className="sidebarListitem">Actor</li>
-          <li className="sidebarListitem">Life</li>
+       
+
+          {categories.map((item)=>  
+          
+          <Link to={`/?user=${item.name}`} className="text-decoration-none">
+         <li className="sidebarListitem">{item.name} </li></Link>
+          
+          
+          
+          
+          
+          
+          
+          
+         )}
+         
         </ul>
       </div>
       <div className="sidebarItem">
