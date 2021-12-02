@@ -1,7 +1,7 @@
 import Topbar from "./components/Topber/Topbar";
 import Home from "./components/home/Home";
 import SinglePost from "./components/SinglePost/SinglePost";
-
+import "react-toastify/dist/ReactToastify.css";
 import WritePost from "./components/WritePost/WritePost";
 import Loging from "./components/service/Loging";
 import Registration from "./components/service/Registration";
