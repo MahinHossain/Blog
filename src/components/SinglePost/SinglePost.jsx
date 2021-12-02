@@ -18,6 +18,14 @@ export default function Single() {
       .then((res) => setpost(res.data))
       .catch((err) => console.log(`err`, err));
   }, []);
+
+  const handledelete = (id) => {
+    console.log("id :>> ", id);
+    axios
+      .delete("http://localhost:5000/api/posts/" + id)
+      .then((res) => console.log(`res`, res))
+      .catch((err) => console.log(`err`, err));
+  };
   return (
     <div className="mx-auto col-md-10">
       <div className="">
@@ -30,12 +38,12 @@ export default function Single() {
           <h4 className="singlepostTitle">{post.title}</h4>
 
           <i class="fas fa-edit text-success"></i>
-          <i class="fas fa-trash"></i>
+          <i class="fas fa-trash" onClick={() => handledelete(post._id)}></i>
         </div>
       </div>
       <p className="singlePostFesc ml-2">{post.desc}</p>
       <Link to={`/?user=${post.username}`} className="text-decoration-none">
-        <h5 className="text-danger">Author:{post.username}</h5>
+        <h5 className="text-danger">author:{post.username}</h5>
       </Link>
     </div>
   );
