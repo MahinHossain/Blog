@@ -8,8 +8,8 @@ export default function WritePost() {
   const [desc, setdesc] = useState("");
   const [file, setfile] = useState(null);
 
-  const { username } = JSON.parse(localStorage.getItem("logeduser"));
-
+  const loged = JSON.parse(localStorage.getItem("logeduser"));
+  const username = loged.username;
   const handlesubmit = async (e) => {
     e.preventDefault();
     const newPost = {

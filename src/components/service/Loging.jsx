@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./style.css";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Loging() {
@@ -11,36 +11,17 @@ export default function Loging() {
   const [password, setpassword] = useState("");
   const [email, setemail] = useState("");
   const [error, seterror] = useState("");
-const history=useHistory()
+  const history = useHistory();
   const baseUrl = "http://localhost:5000/api/auth/login";
   const handlesubmit = (e) => {
     e.preventDefault();
     axios
       .post(baseUrl, { username, password })
       .then((res) => {
-        toast.success('🦄 Wow so easy!', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          });
-        seterror("")
+        seterror("");
 
-
-
-
-      
-
-
-
-
-
-        
-        localStorage.setItem("logeduser",JSON.stringify(res.data))
-        res.data ? history.push("/"):history.push("/login")
+        localStorage.setItem("logeduser", JSON.stringify(res.data));
+        res.data ? history.push("/") : history.push("/login");
 
         // res.data && window.location.replace("/");
       })
@@ -49,16 +30,16 @@ const history=useHistory()
   return (
     <section className="">
       <ToastContainer
-position="top-right"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-/>
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className="container-fluid h-custom">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-md-9 col-lg-6 col-xl-5">
@@ -138,7 +119,7 @@ pauseOnHover
                 </a>
               </div>
               <div className="text-center text-lg-start mt-4 pt-2">
-                {error ? <div className="text-danger">Error</div>:<div></div>}
+                {error ? <div className="text-danger">Error</div> : <div></div>}
                 <button
                   onClick={(e) => handlesubmit(e)}
                   type="button"
