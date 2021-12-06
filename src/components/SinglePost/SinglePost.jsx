@@ -115,6 +115,44 @@ export default function Single() {
       <Link to={`/?user=${post.username}`} className="text-decoration-none">
         <h5 className="text-danger">author:{post.username}</h5>
       </Link>
+      {/* new */}
+
+      <div class="card mb-3">
+        <img
+          class="card-img-top"
+          src={publicFolder + post.photo}
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <div className="row justify-content-between border-bottom">
+            {" "}
+            <h5 class="card-title">{post.title}</h5>
+            {post.username == logeduser.username && (
+              <button
+                className="btn btn-danger"
+                onClick={() => handledelete(post._id, post.username)}
+              >
+                Delete
+              </button>
+            )}
+            {post.username == logeduser.username && (
+              <button
+                className="btn btn-success"
+                onClick={() => handledeupdate(post._id, post.username)}
+              >
+                Edit <i class="fas fa-edit text-success "></i>
+              </button>
+            )}
+          </div>
+
+          <p class="card-text">{post.desc}</p>
+          <p class="card-text">
+            <small class="text-muted">{post.createdAt}</small>
+          </p>
+        </div>
+      </div>
+
+      {/* end */}
     </div>
   );
 }

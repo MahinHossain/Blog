@@ -1,15 +1,13 @@
 import React from "react";
 import Post from "../Post/Post";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation,
-} from "react-router-dom";
+
 export default function Posts({ post }) {
   return (
     <div className=" row ">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status"></div>
+      </div>
+
       {post.length ? (
         post.map((item) => (
           <div className="col-md-6">

@@ -41,37 +41,49 @@ export default function WritePost() {
     }
   };
   return (
-    <div className="writepost col-md-8 mx-auto">
-      {file && (
-        <img className=" img-fluid h-50 w-50" src={URL.createObjectURL(file)} />
-      )}
+    <div className="">
+      <div class="card mb-3">
+        <div className="border">
+          {file && (
+            <img
+              class=" h-50 w-100 "
+              src={URL.createObjectURL(file)}
+              alt="img"
+            />
+          )}
+        </div>
+        <div class="card-body">
+          <input
+            type="file"
+            onChange={(e) => setfile(e.target.files[0])}
+            className=" fas fa-plus-circle"
+            placeholder="Title"
+          />
 
-      <div className=" d-flex justify-content-center flex-wrap">
-        <i class="fas fa-plus-circle "></i>{" "}
-        <input
-          type="file"
-          onChange={(e) => setfile(e.target.files[0])}
-          className="form-control-sm"
-          placeholder="Title"
-        />
-        <input
-          required
-          className="form-control-sm"
-          placeholder="Write  your story here......"
-          onChange={(e) => setdesc(e.target.value)}
-        />
-        <input
-          required
-          className="form-control-sm"
-          placeholder=""
-          onChange={(e) => settitle(e.target.value)}
-        />
-        <button
-          className="btn btn-outline-warning"
-          onClick={(e) => handlesubmit(e)}
-        >
-          Publish
-        </button>
+          <h5 class="card-title">Title</h5>
+          <input
+            required
+            // className="form-control-sm"
+            placeholder=""
+            onChange={(e) => settitle(e.target.value)}
+          />
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              onChange={(e) => setdesc(e.target.value)}
+            ></textarea>
+          </div>
+          <button
+            className="btn btn-warning  justify-content-end"
+            onClick={(e) => handlesubmit(e)}
+          >
+            Publish
+          </button>
+        </div>
       </div>
     </div>
   );

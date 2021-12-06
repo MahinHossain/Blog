@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(baseUrl + search)
-      .then((res) => setpost(res.data))
+      .then((res) => setpost(res.data.sort().reverse()))
       .catch((err) => console.log(`err`, err));
   }, [search]);
   console.log("post :>> ", post);
@@ -23,7 +23,7 @@ export default function Home() {
     <div className="container-fluid">
       <Header />
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-8 card-deck">
           <Posts post={post} />
         </div>
         <div className="col-md-4">
