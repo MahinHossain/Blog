@@ -1,21 +1,26 @@
 import React from "react";
 import Post from "../Post/Post";
 
-export default function Posts({ post }) {
+export default function Posts({ post, loading }) {
   return (
-    <div className=" row ">
-      <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status"></div>
-      </div>
-
-      {post.length ? (
-        post.map((item) => (
-          <div className="col-md-6">
-            <Post item={item} />
-          </div>
-        ))
+    <div className="  container">
+      {loading ? (
+        <div className=" text-center  bg-">
+          {" "}
+          <div
+            className="spinner-grow text-danger"
+            style={{ width: "3rem", height: "3rem" }}
+            role="status"
+          ></div>
+        </div>
       ) : (
-        <h2 className="text-center mt-5 p-5 text-danger">No Post</h2>
+        <div className="row">
+          {post.map((item) => (
+            <div className="col-md-6 ">
+              <Post item={item} />
+            </div>
+          ))}
+        </div>
       )}
     </div>
   );

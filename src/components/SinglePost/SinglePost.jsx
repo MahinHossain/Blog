@@ -66,7 +66,7 @@ export default function Single() {
               className="border"
               placeholder="title"
               type="text"
-              class="form-contro-sm singlepostTitle"
+              class="form-contro-sm "
             />
           )}
 
@@ -124,7 +124,7 @@ export default function Single() {
           alt="Card image cap"
         />
         <div class="card-body">
-          <div className="row justify-content-between border-bottom">
+          {/* <div className="row justify-content-between border-bottom">
             {" "}
             <h5 class="card-title">{post.title}</h5>
             {post.username == logeduser.username && (
@@ -143,12 +143,36 @@ export default function Single() {
                 Edit <i class="fas fa-edit text-success "></i>
               </button>
             )}
-          </div>
+          </div> */}{" "}
+          <div className="singlepostimageitem mt-3 d-flex justify-content-between bg-danger">
+            <div class="card-body">
+              <input
+                type="file"
+                className=" fas fa-plus-circle"
+                placeholder="Title"
+              />
 
-          <p class="card-text">{post.desc}</p>
-          <p class="card-text">
-            <small class="text-muted">{post.createdAt}</small>
-          </p>
+              <h5 class="card-title">Title</h5>
+              <input
+                required
+                // className="form-control-sm"
+                placeholder=""
+              />
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Description</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  onChange={(e) => setdesc(e.target.value)}
+                ></textarea>
+              </div>
+              <button className="btn btn-warning  justify-content-end">
+                Publish
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 body {
   font-family: "Lucida Console", "Courier New", monospace !important;
   color: rgb(83, 73, 73) !important;
+  background-color: rgb(235, 207, 222);
 }
 
 .top {

@@ -7,6 +7,7 @@ import Posts from "../posts/Posts";
 import axios from "axios";
 export default function Home() {
   const [post, setpost] = useState([]);
+  const [loading, setloading] = useState(true);
   const { search } = useLocation();
   // const postId = location.pathname.split("/")[2];
   console.log("search :>> ", search);
@@ -15,16 +16,18 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(baseUrl + search)
-      .then((res) => setpost(res.data.sort().reverse()))
+      .then((res) => {
+        setloading(false);
+        setpost(res.data.sort().reverse());
+      })
       .catch((err) => console.log(`err`, err));
   }, [search]);
-  console.log("post :>> ", post);
   return (
     <div className="container-fluid">
       <Header />
       <div className="row">
-        <div className="col-md-8 card-deck">
-          <Posts post={post} />
+        <div className="col-md-8 card-deck  row">
+          <Posts post={post} loading={loading} />
         </div>
         <div className="col-md-4">
           {" "}
