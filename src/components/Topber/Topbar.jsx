@@ -20,53 +20,8 @@ export default function Topbar() {
   };
 
   return (
-    // <div className=" row mx-3 p-3 ">
-    //   <div className=" col-md-2 d-flex justify-content-around ">
-    //     <i class="   fab fa-facebook-f "></i>
-    //     <i class="  fab fa-instagram"></i>
-    //     <i class="  fab fa-twitter"></i>
-    //   </div>
-
-    //   <ul className="d-flex col-md-8 justify-content-around ">
-    //     <li className="">
-    //       {" "}
-    //       <Link to="/"> Home </Link>
-    //     </li>
-    //     <li className="">About</li>
-
-    //     <li className="">
-    //       {" "}
-    //       <Link to="/writepost"> Write </Link>
-    //     </li>
-    //     {user ? (
-    //       <li className="">
-    //         {" "}
-    //         <Link to="/writepost" onClick={() => hanldeLogout()}>
-    //           {" "}
-    //           Logout{" "}
-    //         </Link>
-    //       </li>
-    //     ) : (
-    //       <li className="">
-    //         {" "}
-    //         <Link to="login">Login </Link>
-    //       </li>
-    //     )}
-
-    //     <span>
-    //       <li className=""> </li>
-    //     </span>
-    //   </ul>
-
-    //   <div className="col-md-2 d-flex justify-content-center  ">
-    //     <i class="fas fa-user "></i>
-    //     <i class="fas fa-search"></i>
-    //   </div>
-    // </div>
-
-    // nacv
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-dark container-fluid
+      className="navbar navbar-expand-lg navbar-dark navbar-navbg container-fluid text-white
     "
     >
       <div className="container-fluid">
@@ -116,9 +71,9 @@ export default function Topbar() {
             </button>
           </form> */}
           <div className=" col-md-4 d-flex justify-content-around ">
-            <i class="   fab fa-facebook-f text-success bg-light "></i>
-            <i class="  fab fa-instagram bg-light"></i>
-            <i class="  fab fa-twitter bg-light"></i>
+            <i class="   fab fa-facebook-f text-success  "></i>
+            <i class="  fab fa-instagram "></i>
+            <i class="  fab fa-twitter "></i>
           </div>
         </div>
       </div>

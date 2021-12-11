@@ -270,3 +270,43 @@ input[type="text"]:placeholder {
 #icon {
   width: 60%;
 }
+
+.postimg {
+  height: 50% !important;
+}
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.gradientcolor {
+  background-image: linear-gradient(to right, rgb(233, 121, 121), yellow);
+  color: white;
+}
+.gradientcolordele {
+  background-image: linear-gradient(
+    to right,
+    rgb(228, 21, 21),
+    rgb(228, 48, 213)
+  );
+  color: white;
+}
+.gradientcolorpub {
+  background-image: linear-gradient(
+    to right,
+    rgb(148, 228, 101),
+    rgb(76, 221, 226)
+  );
+  color: rgb(17, 3, 3);
+}
+
+.navbar-navbg {
+  color: white;
+
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+ul li a {
+  color: white;
+}
